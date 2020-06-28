@@ -18,24 +18,33 @@
     <!-- Шапка сайта -->
 
     <header class="page-header">
-      <nav class="container">
-        <a href="./index.html" class="logo-head"
-          ><span class="blue">Web</span>Studio</a
-        >
-        <ul class="site-nav list">
-          <li><a href="./index.html" class="link current">Студия</a></li>
-          <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-          <li><a href="" class="link">Контакты</a></li>
-        </ul>
-      </nav>
-      <div class="container">
+      <div class="container nav-flex">
+        <nav>
+          <div class="nav-flex">
+            <a href="./index.html" class="logo-head"
+              ><span class="blue">Web</span> Studio</a
+            >
+            <ul class="site-nav list">
+              <li class="item">
+                <a href="./index.html" class="link current">Студия</a>
+              </li>
+              <li class="item">
+                <a href="./portfolio.html" class="link">Портфолио</a>
+              </li>
+              <li class="item"><a href="" class="link">Контакты</a></li>
+            </ul>
+          </div>
+        </nav>
+
         <ul class="header-contacts list">
-          <li>
+          <li class="item">
             <a href="mailto:info@devstudio.com" class="link"
               >info@devstudio.com</a
             >
           </li>
-          <li><a href="tel:+3800961111111" class="link">+3800961111111</a></li>
+          <li class="item">
+            <a href="tel:+3800961111111" class="link">+38 0096 111 11 11</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -56,14 +65,14 @@
 
       <!-- какие-то приемущества -->
 
-      <section class="sections features">
+      <section class="features">
         <!-- Скрытый заголовок -->
         <div class="container">
           <h2 class="section-title is-hidden">Мы лучший выбор</h2>
 
           <!-- Список преимуществ компании -->
 
-          <ul class="list">
+          <ul class="features-box list">
             <li>
               <h3 class="title">Внимание к деталям</h3>
               <p class="details">
@@ -104,8 +113,8 @@
 
           <!-- Список ссылок(в картинках с описанием) на проекты  -->
 
-          <ul class="list">
-            <li>
+          <ul class="example-box list">
+            <li class="item">
               <a href="" class="link">
                 <img
                   src="./images/img1.jpg"
@@ -116,7 +125,7 @@
                 <h3 class="title">Десктопные приложения</h3>
               </a>
             </li>
-            <li>
+            <li class="item">
               <a href="" class="link">
                 <img
                   src="./images/img2.jpg"
@@ -127,7 +136,7 @@
                 <h3 class="title">Мобильные приложения</h3>
               </a>
             </li>
-            <li>
+            <li class="item">
               <a href="" class="link">
                 <img
                   src="./images/img3.jpg"
@@ -148,8 +157,8 @@
 
           <!-- Список лиц членов нашей команды -->
 
-          <ul class="list">
-            <li>
+          <ul class="team-box list">
+            <li class="item">
               <img
                 src="./images/face1.jpg"
                 alt="Лицо человека1"
@@ -159,7 +168,10 @@
               />
               <h3 class="name">Николай Кучеренко</h3>
               <p class="rank">Product Designer</p>
-              <ul class="list">
+
+              <!-- Временно скрыты -->
+
+              <ul class="is-hidden list">
                 <li>
                   <a href="" aria-label="Ссылка на Instagram" class="link"
                     >Instagram</a
@@ -182,7 +194,7 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/face2.jpg"
                 alt="Лицо человека2"
@@ -192,7 +204,7 @@
               />
               <h3 class="name">Ольга Иванова</h3>
               <p class="rank">Frontend Developer</p>
-              <ul class="list">
+              <ul class="is-hidden list">
                 <li>
                   <a href="" aria-label="Ссылка на Instagram" class="link"
                     >Instagram</a
@@ -215,7 +227,7 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/face3.jpg"
                 alt="Лицо человека3"
@@ -225,7 +237,7 @@
               />
               <h3 class="name">Андрей Шевченко</h3>
               <p class="rank">Marketing</p>
-              <ul class="list">
+              <ul class="is-hidden list">
                 <li>
                   <a href="" aria-label="Ссылка на Instagram" class="link"
                     >Instagram</a
@@ -248,7 +260,7 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/face4.jpg"
                 alt="Лицо человека4"
@@ -258,7 +270,7 @@
               />
               <h3 class="name">Иван Николаев</h3>
               <p class="rank">UI Designer</p>
-              <ul class="list">
+              <ul class="is-hidden list">
                 <li>
                   <a href="" aria-label="Ссылка на Instagram" class="link"
                     >Instagram</a
@@ -290,25 +302,25 @@
       <section class="sections partners">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
-          <ul class="list">
-            <li>
+          <ul class="partners list">
+            <li class="item">
               <a href=""> <img src="./icons/logo1.svg" alt="YA & CO" /></a>
             </li>
-            <li>
+            <li class="item">
               <a href=""
                 ><img src="./icons/logo2.svg" alt="Company TAG LINE Here"
               /></a>
             </li>
-            <li>
+            <li class="item">
               <a href=""><img src="./icons/logo3.svg" alt="Company" /></a>
             </li>
-            <li>
+            <li class="item">
               <a href=""><img src="./icons/logo4.svg" alt="Foster Peters" /></a>
             </li>
-            <li>
+            <li class="item">
               <a href=""><img src="./icons/logo5.svg" alt="Brand" /></a>
             </li>
-            <li>
+            <li class="item">
               <a href=""
                 ><img src="./icons/logo6.svg" alt="Company TAG LINE"
               /></a>
@@ -321,50 +333,67 @@
     <!-- Футер -->
     <footer>
       <div class="container footer-padding">
-        <a href="./index.html" class="logo-foot"
-          ><span class="blue">Web</span> Studio</a
-        >
-        <address class="address">
-          г. Киев, пр-т Леси Украинки, 26
-        </address>
-        <address class="footer-contacts">
-          <a href="mailto:info@devstudio.com" class="link"
-            >info@devstudio.com</a
+        <div class="address-box">
+          <a href="./index.html" class="logo-foot"
+            ><span class="blue">Web</span> Studio</a
           >
-          <br />
-          <a href="tel:+3800961111111" class="link">+3800961111111</a>
-        </address>
+          <address class="address">
+            г. Киев, пр-т Леси Украинки, 26
+          </address>
+          <address class="footer-contacts">
+            <a href="mailto:info@devstudio.com" class="link"
+              >info@devstudio.com</a
+            >
+            <br />
+            <a href="tel:+3800961111111" class="link">+3800961111111</a>
+          </address>
+        </div>
+
         <!-- Зазывающий подписаться список ссылок -->
-        <section class="footer-social">
-          <b class="title">присоединяйтесь</b>
-          <ul class="list">
-            <li>
-              <a href="" aria-label="Ссылка на Instagram" class="link"
-                >Instagram</a
-              >
-            </li>
-            <li>
-              <a href="" aria-label="Ссылка на Twitter" class="link">Twitter</a>
-            </li>
-            <li>
-              <a href="" aria-label="Ссылка на Facebook" class="link"
-                >Facebook</a
-              >
-            </li>
-            <li>
-              <a href="" aria-label="Ссылка на LinkedIn" class="link"
-                >LinkedIn</a
-              >
-            </li>
-          </ul>
-        </section>
+
+        <div class="social-box">
+          <section class="footer-social">
+            <b class="title">присоединяйтесь</b>
+            <ul class="list">
+              <li>
+                <a href="" aria-label="Ссылка на Instagram" class="link"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a href="" aria-label="Ссылка на Twitter" class="link"
+                  >Twitter</a
+                >
+              </li>
+              <li>
+                <a href="" aria-label="Ссылка на Facebook" class="link"
+                  >Facebook</a
+                >
+              </li>
+              <li>
+                <a href="" aria-label="Ссылка на LinkedIn" class="link"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </section>
+        </div>
+
         <!-- Секция зазывающая и помогающая сразу подписаться на рассылку -->
-        <section class="footer-social">
-          <b class="title">Подпишитесь на рассылку</b>
-          <!-- <textarea name="e-mail" id="e-mail-area" cols="30" rows="1"></textarea> -->
-          <!-- Будущая кнопка -->
-          <button class="button-blue">Подписаться</button>
-        </section>
+
+        <div class="form-container">
+          <section class="footer-social">
+            <b class="title">Подпишитесь на рассылку</b>
+            <!-- <textarea
+            name="e-mail"
+            id="e-mail-area"
+            cols="30"
+            rows="1"
+          ></textarea> -->
+
+            <button class="button-blue">Подписаться</button>
+          </section>
+        </div>
       </div>
     </footer>
   </body>
