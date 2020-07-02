@@ -12,6 +12,7 @@
   --primary-white-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
   --footer-bg-color: #2f303a;
+  --button-company-color: #afb1b8;
 }
 
 body {
@@ -42,7 +43,14 @@ body {
 }
 
 .is-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Logo Head and Foot*/
@@ -415,11 +423,24 @@ footer {
 }
 
 /* ВРЕМЕННО для внешнего вида */
-.partners > .item {
-  padding: 20px 63px;
-  border: 1px solid #afb1b8;
+.partners .button-company {
+  width: 170px;
+  height: 90px;
+
+  background-color: transparent;
+  border: 1px solid var(--button-company-color);
+  fill: var(--button-company-color);
   box-sizing: border-box;
   border-radius: 4px;
+}
+
+/* .button-icon {
+  fill: currentColor;
+} */
+.partners .button-company:hover,
+partners .button-company:focus {
+  border: 1px solid var(--accent-text-color);
+  fill: var(--accent-text-color);
 }
 
 .partners > .item:not(:last-child) {
