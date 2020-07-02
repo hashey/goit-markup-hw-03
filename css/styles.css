@@ -432,13 +432,11 @@ footer {
   fill: var(--button-company-color);
   box-sizing: border-box;
   border-radius: 4px;
+  cursor: pointer;
 }
 
-/* .button-icon {
-  fill: currentColor;
-} */
 .partners .button-company:hover,
-partners .button-company:focus {
+.partners .button-company:focus {
   border: 1px solid var(--accent-text-color);
   fill: var(--accent-text-color);
 }
